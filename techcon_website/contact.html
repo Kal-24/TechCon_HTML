@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - TechCon 2024</title>
+  <style>
+    /* Basic responsive iframe container */
+    .map-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    form div {
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section>
+      <h2>Contact Information</h2>
+      <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+      <p>
+        Follow us on:
+        <a href="https://twitter.com/TechCon2024" target="_blank" rel="noopener noreferrer">Twitter</a> |
+        <a href="https://facebook.com/TechCon2024" target="_blank" rel="noopener noreferrer">Facebook</a> |
+        <a href="https://linkedin.com/company/TechCon2024" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </section>
+
+    <section class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086875512343!2d-122.41941508468182!3d37.774929279759465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5d863a5f%3A0x8d8cc2b7d02ed6c!2sSan%20Francisco%20Convention%20Center!5e0!3m2!1sen!2sus!4v1616618929845!5m2!1sen!2sus" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" 
+        title="TechCon Venue Location">
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label><br />
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2024 TechCon. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
